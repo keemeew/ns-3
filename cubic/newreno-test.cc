@@ -255,7 +255,7 @@ CwndChange (uint32_t oldCwnd, uint32_t newCwnd)
        myfile.open ("newreno-cwnd.log", ios::out | ios::app);
 
     }
-     myfile << Simulator::Now ().GetSeconds () << "," << newCwnd << "\n"; 
+     myfile << Simulator::Now ().GetSeconds () << " " << newCwnd << "\n"; 
      myfile.close();
 }
 
@@ -282,7 +282,7 @@ SsThreshChange (uint32_t oldSsThresh, uint32_t newSsThresh)
     {
        myfile.open ("newreno-ssthresh.log", ios::out | ios::app);
     }
-     myfile << Simulator::Now ().GetSeconds () << "," << newSsThresh << "\n"; 
+     myfile << Simulator::Now ().GetSeconds () << " " << newSsThresh << "\n"; 
      myfile.close();
 }
 
