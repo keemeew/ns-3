@@ -244,7 +244,6 @@ CwndChange (uint32_t oldCwnd, uint32_t newCwnd)
   if (newCwndFile)
     {
       myfile.open ("newreno-cwnd.log");
-      myfile.open ("newreno-cwnd.log");
       myfile << "set title 'CWND of NewReno'" << std::endl;
       myfile << "set xlabel 'Time (s)'" << std::endl;
       myfile << "set ylabel 'CWND'" << std::endl;

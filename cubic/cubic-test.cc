@@ -244,7 +244,6 @@ CwndChange (uint32_t oldCwnd, uint32_t newCwnd)
   if (newCwndFile)
     {
       myfile.open ("cubic-cwnd.log");
-      myfile.open ("cubic-cwnd.log");
       myfile << "set title 'CWND of Cubic'" << std::endl;
       myfile << "set xlabel 'Time (s)'" << std::endl;
       myfile << "set ylabel 'CWND'" << std::endl;
@@ -270,7 +269,6 @@ SsThreshChange (uint32_t oldSsThresh, uint32_t newSsThresh)
   ofstream myfile;
   if (newSsThresFile)
     {
-      myfile.open ("cubic-ssthresh.log");
       myfile.open ("cubic-ssthresh.log");
       myfile << "set title 'ssthresh of Cubic'" << std::endl;
       myfile << "set xlabel 'Time (s)'" << std::endl;
