@@ -243,12 +243,12 @@ CwndChange (uint32_t oldCwnd, uint32_t newCwnd)
   ofstream myfile;
   if (newCwndFile)
     {
-      myfile.open ("cubic-cwnd.log");
+      myfile.open ("newreno-cwnd.log");
       newCwndFile = false;
     }
   else
     {
-       myfile.open ("cubic-cwnd.log", ios::out | ios::app);
+       myfile.open ("newreno-cwnd.log", ios::out | ios::app);
     }
      myfile << Simulator::Now ().GetSeconds () << "," << newCwnd << "\n"; 
      myfile.close();
@@ -266,12 +266,12 @@ SsThreshChange (uint32_t oldSsThresh, uint32_t newSsThresh)
   ofstream myfile;
   if (newSsThresFile)
     {
-      myfile.open ("cubic-ssthresh.log");
+      myfile.open ("newreno-ssthresh.log");
       newSsThresFile = false;
     }
   else
     {
-       myfile.open ("cubic-ssthresh.log", ios::out | ios::app);
+       myfile.open ("newreno-ssthresh.log", ios::out | ios::app);
     }
      myfile << Simulator::Now ().GetSeconds () << "," << newSsThresh << "\n"; 
      myfile.close();
