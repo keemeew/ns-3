@@ -247,7 +247,8 @@ CwndChange (uint32_t oldCwnd, uint32_t newCwnd)
       myfile << "set title 'CWND of Cubic'" << std::endl;
       myfile << "set xlabel 'Time (s)'" << std::endl;
       myfile << "set ylabel 'CWND'" << std::endl;
-      myfile << "plot '-' title 'CWND' with lines" << std::endl;      newCwndFile = false;
+      myfile << "plot '-' title 'CWND' with lines" << std::endl;      
+      newCwndFile = false;
     }
   else
     {
@@ -273,7 +274,8 @@ SsThreshChange (uint32_t oldSsThresh, uint32_t newSsThresh)
       myfile << "set title 'ssthresh of Cubic'" << std::endl;
       myfile << "set xlabel 'Time (s)'" << std::endl;
       myfile << "set ylabel 'Ssthresh'" << std::endl;
-      myfile << "plot '-' title 'ssthresh' with lines" << std::endl;      newSsThresFile = false;
+      myfile << "plot '-' title 'ssthresh' with lines" << std::endl;      
+      newSsThresFile = false;
     }
   else
     {

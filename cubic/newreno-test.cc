@@ -247,7 +247,8 @@ CwndChange (uint32_t oldCwnd, uint32_t newCwnd)
       myfile << "set title 'CWND of NewReno'" << std::endl;
       myfile << "set xlabel 'Time (s)'" << std::endl;
       myfile << "set ylabel 'CWND'" << std::endl;
-      myfile << "plot '-' title 'CWND' with lines" << std::endl;      newCwndFile = false;
+      myfile << "plot '-' title 'CWND' with lines" << std::endl;      
+      newCwndFile = false;
     }
   else
     {
