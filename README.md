@@ -1,7 +1,7 @@
 ## Advanced TCP in ns-3(CUBIC and DCTCP)
 ### Introduction
 2021년 2월 15일~16일에 진행되는 한국통신학회 주최 "ns-3를 이용한 네트워크 시뮬레이션 기초" 단기 강좌 중
-Session 9. Advanced TCP in ns-3 을 진행하기 위한 코드입니다.
+Session 9. Advanced TCP in ns-3 을 진행하기 위한 코드
 
 ## Instructions for CUBIC:
 Note: Ubuntu 16.04 Xenial Xerus (amd64) on Feb, 2021.
@@ -22,7 +22,7 @@ cd source/ns-3.27
 ./waf configure
 ./waf build
 ```
-만약 ./bake.py check 시에 비어있는 dependency가 있다면 먼저 설치 한 후 이후 단계를 진행해주십시오.
+※만약 ./bake.py check 시에 비어있는 dependency가 있다면 먼저 설치 한 후 이후 단계를 진행
 
 2. CUBIC 실행코드 다운로드 및 배치
 ```bash
@@ -64,7 +64,7 @@ load ‘cubic-ssthresh.log’
 load ‘newreno-cwnd.log’
 load ‘newreno-ssthresh.log’
 ```
-만약 gnuplot이 깔려있지 않은 경우 apt-get install gnuplot 를 입력하여 설치하실 수 있습니다.
+※만약 gnuplot이 깔려있지 않은 경우 apt-get install gnuplot 를 입력하여 설치 
 
 5. (선택) CUBIC과 NEWRENO 그래프 동시 출력
 ```bash
