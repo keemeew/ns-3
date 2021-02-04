@@ -100,3 +100,9 @@ cd ns-3-dev
 ./waf build
 ./waf --run dctcp-example
 ```
+
+
+3. 코드 실행 결과 확인
+```bash
+
+```
