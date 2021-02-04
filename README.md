@@ -4,7 +4,7 @@
 Session 9. Advanced TCP in ns-3 을 진행하기 위한 코드
 
 ## Instructions for CUBIC:
-Note: Ubuntu 16.04 Xenial Xerus (amd64) on Feb, 2021.
+Note: Implemented on Ubuntu 16.04 Xenial Xerus (amd64), Feb 2021.
 
 1. ns-3.27 설치
 
@@ -75,7 +75,7 @@ load ‘ssthresh_compare’
 ```
 
 ## Instructions for DCTCP:
-Note: Ubuntu 16.04 Xenial Xerus (amd64) on Feb, 2021.
+Note: Implemented on Ubuntu 16.04 Xenial Xerus (amd64), Feb 2021.
 
 1. DCTCP 실행코드 다운로드 및 배치
 ```bash
