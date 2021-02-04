@@ -79,7 +79,7 @@ Note: Ubuntu 16.04 Xenial Xerus (amd64) on Feb, 2021.
 
 1. DCTCP 실행코드 다운로드 및 배치
 ```bash
-# DCTCP 실행을 위한 ns-3 공식 library
+# DCTCP 실행을 위한 ns-3 공식 library 다운로드
 git clone https://gitlab.com/nsnam/ns-3-dev
 
 # CUBIC 실행코드 다운로드
