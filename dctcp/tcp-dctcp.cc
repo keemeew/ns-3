@@ -130,7 +130,7 @@ TcpDctcp::GetSsThresh (Ptr<const TcpSocketState> tcb, uint32_t bytesInFlight)
 {
   t = static_cast<uint32_t> ((1 - m_alpha / 2.0) * tcb->m_cWnd);
   NS_LOG_FUNCTION (this << tcb << bytesInFlight);
-  printf("New ssthresh calculated as %d \n", t);
+  std::cout << "New ssthresh calculated as " << t << "\n";
   return t;
 }
 
@@ -271,7 +271,7 @@ TcpDctcp::CwndEvent (Ptr<TcpSocketState> tcb,
     {
     case TcpSocketState::CA_EVENT_ECN_IS_CE:
       CeState0to1 (tcb);
-      printf("ECN: CE marked \n");
+      std::cout << "ECN: CE marked \n";
       break;
     case TcpSocketState::CA_EVENT_ECN_NO_CE:
       CeState1to0 (tcb);

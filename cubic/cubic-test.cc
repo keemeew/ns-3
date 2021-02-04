@@ -283,8 +283,11 @@ SsThreshChange (uint32_t oldSsThresh, uint32_t newSsThresh)
     {
        myfile.open ("cubic-ssthresh.log", ios::out | ios::app);
     }
-     myfile << Simulator::Now ().GetSeconds () << " " << newSsThresh << "\n"; 
-     myfile.close();
+    if (newSsThresh < 4294967295)
+    {
+      myfile << Simulator::Now ().GetSeconds () << " " << newSsThresh << "\n"; 
+      myfile.close();
+    }
 }
 
 /**
