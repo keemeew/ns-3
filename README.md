@@ -110,7 +110,7 @@ cat dctcp-example-t2-length.dat
 cat dctcp-example-s1-r1-throughput.dat
 cat dctcp-example-s2-r2-throughput.dat
 cat dctcp-example-s1-r3-throughput.dat
-```ㄲ
+```
 dctcp-example-fairness.dat: S1-R1, S2-R2, S3-R1 간의 average throughput과 각 sender 간의 fairness 
 
 dctcp-example-tx-length.dat: 스위치의 queue 사이즈
