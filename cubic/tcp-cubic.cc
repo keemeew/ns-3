@@ -327,6 +327,8 @@ TcpCubic::fls (int x)
   return r;
 }
 
+uint32_t k = 0;
+
 /**
  * The CUBIC algorithm in Linux and ns-2 does not use the normal C++ pow
  * function to take the cubed root. Instead it uses its own method. While
@@ -335,6 +337,7 @@ TcpCubic::fls (int x)
 uint32_t
 TcpCubic::CubicRoot (uint64_t a)
 {
+    std::cout << "Calculating CubicRoot of " << a << "\n";
   uint32_t x, b, shift;
   /*
    * cbrt(x) MSB values for x MSB values in [0..63].
@@ -358,11 +361,15 @@ TcpCubic::CubicRoot (uint64_t a)
 
   NS_LOG_DEBUG("  CubicRoot: a = " << a);
   NS_LOG_DEBUG("  CubicRoot: b = " << b);
+  std::cout << a << " is " << b << " digits in binary\n";
 
   if (b < 7)
     {
       /* a in [0..63] */
-      return ((uint32_t)v[(uint32_t)a] + 35) >> 6;
+      std::cout << "a < 64 case\n";
+      k = ((uint32_t)v[(uint32_t)a] + 35) >> 6;
+      std::cout << "CubicRoot of " << a << " is " << k << "\n";
+      return k;
     }
 
   b = ((b * 84) >> 8) - 1;
@@ -372,6 +379,9 @@ TcpCubic::CubicRoot (uint64_t a)
   NS_LOG_DEBUG("  CubicRoot: b = " << b);
   NS_LOG_DEBUG("  CubicRoot: shift = " << shift);
   NS_LOG_DEBUG("  CubicRoot: x = " << x);
+  std::cout << "CubicRoot: b = " << b << "\n";
+  std::cout << "CubicRoot: shift = " << shift << "\n";
+  std::cout << "Starting point of Newton-Rapson is " << x << "\n";
 
   /*
    * Newton-Raphson iteration
@@ -386,9 +396,12 @@ TcpCubic::CubicRoot (uint64_t a)
   // supported.
   //x = (2 * x + (uint32_t)div64_64(a, (uint64_t)x * (uint64_t)(x - 1)));
   x = (2 * x + (uint32_t)(a / ((uint64_t)x * (uint64_t)(x - 1))));
+  //x = x / 3;
   x = ((x * 341) >> 10);
+   
 
   NS_LOG_DEBUG("  CubicRoot: x = " << x);
+  std::cout << "CubicRoot of " << a << " is " << x << '\n';
   return x;
 }
 
