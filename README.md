@@ -40,7 +40,7 @@ cp tcp-cubic.cc ~/bake/source/ns-3.27/src/internet/model/
 cp tcp-cubic.h ~/bake/source/ns-3.27/src/internet/model/
 cp cubic-test.cc ~/bake/source/ns-3.27/scratch
 cp newreno-test.cc ~/bake/source/ns-3.27/scratch
-cp wscript ~/bake/source/ns-3.27/src/internet/model/
+cp wscript ~/bake/source/ns-3.27/src/internet/
 cp graph_converge.py ~/bake/source/ns-3.27/
 ```
 
