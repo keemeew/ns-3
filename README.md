@@ -36,12 +36,12 @@ git clone https://github.com/keemeew/ns-3
 
 # CUBIC 실행을 위한 실행코드 배치
 cd ns-3/cubic
-cp tcp-cubic.cc ~/bake/source/ns-3.27/src/internet/model/
-cp tcp-cubic.h ~/bake/source/ns-3.27/src/internet/model/
+cp tcp-cubic.cc ~/bake/source/ns-3.27/src/internet/model
+cp tcp-cubic.h ~/bake/source/ns-3.27/src/internet/model
 cp cubic-test.cc ~/bake/source/ns-3.27/scratch
 cp newreno-test.cc ~/bake/source/ns-3.27/scratch
-cp wscript ~/bake/source/ns-3.27/src/internet/
-cp graph_converge.py ~/bake/source/ns-3.27/
+cp wscript ~/bake/source/ns-3.27/src/internet
+cp graph_converge.py ~/bake/source/ns-3.27
 ```
 
 3. 코드 실행
@@ -87,8 +87,8 @@ git clone https://github.com/keemeew/ns-3
 
 # DCTCP 실행을 위한 실행코드 배치
 cd ns-3/dctcp
-cp tcp-dctcp.cc ~/ns-3-dev/src/internet/model/
-cp tcp-dctcp.h ~/ns-3-dev/src/internet/model/
+cp tcp-dctcp.cc ~/ns-3-dev/src/internet/model
+cp tcp-dctcp.h ~/ns-3-dev/src/internet/model
 cp dctcp-example.cc ~/ns-3-dev/scratch
 ```
 
