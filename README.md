@@ -127,4 +127,4 @@ T1의 queue length(us)<br/>
 T2의 queue length(us)<br/>
 
 - __Queue length 비교 그래프__<br/> 
-'qlen_pkts.png'와 'qlen_us.png' 생성
+'qlen_pkts.png'와 'qlen_us.png' 생성 확인
