@@ -113,7 +113,7 @@ cat dctcp-example-s2-r2-throughput.dat
 cat dctcp-example-s3-r1-throughput.dat
 ```
 __dctcp-example-fairness.dat__: S1-R1, S2-R2, S3-R1 간의 average throughput과 각 sender 간의 fairness<br/> 
-__dctcp-example-tx-length.dat__: 스위치의 queue 사이즈<br/>
+__dctcp-example-tx-length.dat__: 각 스위치의 queue 사이즈<br/>
 __dctcp-example-sx-rx-throughput.dat__: 각 sender의 시간 별 throughput
 
 4. (선택) Queue length 그래프 출력
