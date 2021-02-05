@@ -267,7 +267,7 @@ CheckT2QueueSize (Ptr<QueueDisc> queue)
 
 int main (int argc, char *argv[])
 {
-  std::cout << "Starting dctcp testing..\nIt would take more than two hours to run, so be patient!\n"; 
+  std::cout << "Starting dctcp testing..\nIt would take longer than two hours to run, so be patient!\n"; 
   std::string outputFilePath = ".";
   std::string tcpTypeId = "TcpDctcp";
   Time flowStartupWindow = Seconds (2);
