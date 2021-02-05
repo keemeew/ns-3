@@ -56,7 +56,7 @@ cd bake/source/ns-3.27
 ./waf --run scratch/newreno-test
 ```
 
-4. 실행 결과 그래프 출력
+4. 코드 실행 결과 그래프 출력
 ```bash
 gnuplot
 load ‘cubic-cwnd.log’
