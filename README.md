@@ -90,6 +90,7 @@ cd ns-3/dctcp
 cp tcp-dctcp.cc ~/ns-3-dev/src/internet/model
 cp tcp-dctcp.h ~/ns-3-dev/src/internet/model
 cp dctcp-example.cc ~/ns-3-dev/scratch
+cp queue_length.py ~/ns-3-dev
 ```
 
 2. 코드 실행
@@ -114,3 +115,16 @@ cat dctcp-example-s3-r1-throughput.dat
 __dctcp-example-fairness.dat__: S1-R1, S2-R2, S3-R1 간의 average throughput과 각 sender 간의 fairness<br/> 
 __dctcp-example-tx-length.dat__: 스위치의 queue 사이즈<br/>
 __dctcp-example-sx-rx-throughput.dat__: 각 sender의 시간 별 throughput
+
+4. (선택) Queue length 그래프 출력
+```bash
+python queue_length.py
+```
+(1) 출력 메세지<br/> 
+T1의 queue length(pkts)<br/>
+T2의 queue length(pkts)<br/>
+T1의 queue length(us)<br/>
+T2의 queue length(us)<br/>
+
+(2) Queue length 비교 그래프<br/> 
+'qlen_pkts.png'와 'qlen_us.png' 생성
