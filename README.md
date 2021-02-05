@@ -120,11 +120,11 @@ __dctcp-example-sx-rx-throughput.dat__: 각 sender의 시간 별 throughput
 ```bash
 python queue_length.py
 ```
-(1) 출력 메세지<br/> 
+- __출력 메세지__<br/> 
 T1의 queue length(pkts)<br/>
 T2의 queue length(pkts)<br/>
 T1의 queue length(us)<br/>
 T2의 queue length(us)<br/>
 
-(2) Queue length 비교 그래프<br/> 
+- __Queue length 비교 그래프__<br/> 
 'qlen_pkts.png'와 'qlen_us.png' 생성
