@@ -64,7 +64,7 @@ load ‘cubic-ssthresh.log’
 load ‘newreno-cwnd.log’
 load ‘newreno-ssthresh.log’
 ```
-※만약 gnuplot이 깔려있지 않은 경우 apt-get install gnuplot 를 입력하여 설치 
+※만약 gnuplot이 깔려있지 않은 경우 sudo apt-get install gnuplot 를 입력하여 설치 
 
 5. (선택) CUBIC과 NEWRENO 그래프 동시 출력
 ```bash
