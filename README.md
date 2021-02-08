@@ -99,6 +99,7 @@ cp queue_length.py ~/ns-3-dev
 ```bash
 # home directory로
 cd ..
+cd ..
 
 # DCTCP 코드 실행*
 cd ns-3-dev
