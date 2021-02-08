@@ -63,6 +63,7 @@ load 'cubic-cwnd.log'
 load 'cubic-ssthresh.log'
 load 'newreno-cwnd.log'
 load 'newreno-ssthresh.log'
+exit
 ```
 ※만약 gnuplot이 깔려있지 않은 경우 sudo apt-get install gnuplot 를 입력하여 설치 
 
@@ -72,6 +73,7 @@ python graph_converge.py
 gnuplot
 load 'cwnd_compare'
 load 'ssthresh_compare'
+exit
 ```
 
 ## Instructions for DCTCP:
