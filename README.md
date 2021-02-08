@@ -1,10 +1,9 @@
 # Advanced TCP in ns-3 (CUBIC and DCTCP)
 ### Introduction
-2021년 2월 15일~16일에 진행되는 한국통신학회 주최 "ns-3를 이용한 네트워크 시뮬레이션 기초" 단기 강좌 중
-Session 9. Advanced TCP in ns-3 을 진행하기 위한 코드
+2021년 2월 15일~16일에 진행되는 한국통신학회 주최 "ns-3를 이용한 네트워크 시뮬레이션 기초" 단기 강좌 중 Session 9. Advanced TCP in ns-3 을 진행하기 위한 코드. 만약 ova 가상머신을 받아 사용한다면 Cubic 3번, DCTCP 2번의 코드 실행 부분부터 진행 요망(*).
 
 ## Instructions for CUBIC:
-Note: Implemented on Ubuntu 16.04 Xenial Xerus (amd64), Feb 2021.
+Note: Implemented on Ubuntu 18.04 Bionic Beaver (amd64), Feb 2021.
 
 1. ns-3.27 설치
 
@@ -14,6 +13,7 @@ cd bake
 export BAKE_HOME=`pwd`
 export PATH=$PATH:$BAKE_HOME:$BAKE_HOME/build/bin
 export PYTHONPATH=$PYTHONPATH:$BAKE_HOME:$BAKE_HOME/build/lib
+pip3 install distro
 ./bake.py configure -e ns-3.27
 ./bake.py check
 ./bake.py download
@@ -50,7 +50,7 @@ cp graph_converge.py ~/bake/source/ns-3.27
 cd ..
 cd ..
 
-# CUBIC과 NEWRENO 코드 실행
+# CUBIC과 NEWRENO 코드 실행*
 cd bake/source/ns-3.27
 ./waf --run scratch/cubic-test
 ./waf --run scratch/newreno-test
@@ -75,7 +75,7 @@ load ‘ssthresh_compare’
 ```
 
 ## Instructions for DCTCP:
-Note: Implemented on Ubuntu 16.04 Xenial Xerus (amd64), Feb 2021.
+Note: Implemented on Ubuntu 18.04 Bionic Beaver (amd64), Feb 2021.
 
 1. DCTCP 실행코드 다운로드 및 배치
 ```bash
@@ -95,13 +95,15 @@ cp queue_length.py ~/ns-3-dev
 
 2. 코드 실행
 ```bash
+# home directory로
 cd ..
+
+# DCTCP 코드 실행*
 cd ns-3-dev
 ./waf configure
 ./waf build
 ./waf --run dctcp-example
 ```
-
 
 3. 코드 실행 결과 확인
 ```bash
