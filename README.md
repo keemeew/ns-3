@@ -84,7 +84,7 @@ Note: Implemented on Ubuntu 18.04 Bionic Beaver (amd64), Feb 2021.
 # DCTCP 실행을 위한 ns-3 공식 library 다운로드
 git clone https://gitlab.com/nsnam/ns-3-dev
 
-# CUBIC 실행코드 다운로드
+# DCTCP 실행코드 다운로드
 git clone https://github.com/keemeew/ns-3
 
 # DCTCP 실행을 위한 실행코드 배치
