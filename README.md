@@ -1,6 +1,7 @@
 # Advanced TCP in ns-3 (CUBIC and DCTCP)
 ### Introduction
-2021년 2월 15일~16일에 진행되는 한국통신학회 주최 "ns-3를 이용한 네트워크 시뮬레이션 기초" 단기 강좌 중 Session 9. Advanced TCP in ns-3 을 진행하기 위한 코드. 만약 제공되는 ova 가상머신을 다운받아 사용한다면 Cubic 3번, DCTCP 2번의 코드 실행 부분부터 진행 요망(*).
+2021년 2월 15일~16일에 진행되는 한국통신학회 주최 "ns-3를 이용한 네트워크 시뮬레이션 기초" 단기 강좌 중 Session 9. Advanced TCP in ns-3 을 진행하기 위한 코드.<br/>
+__만약 제공되는 ova 가상머신을 다운받아 사용한다면 Cubic 3번, DCTCP 2번의 코드 실행 부분부터 진행 요망(*).__
 
 ## Instructions for CUBIC:
 Note: Implemented on Ubuntu 18.04 Bionic Beaver (amd64), Feb 2021.
