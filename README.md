@@ -53,8 +53,8 @@ cd ..
 
 # CUBIC과 NEWRENO 코드 실행*
 cd bake/source/ns-3.27
-./waf --run scratch/cubic-test
-./waf --run scratch/newreno-test
+./waf --run cubic-test
+./waf --run newreno-test
 ```
 
 4. 코드 실행 결과 그래프 출력
